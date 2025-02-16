@@ -2,9 +2,9 @@
 #
 # USG and EdgeRouter route-test script for failover
 #
-# uses ping to check latency and packet loss.
-#  returns zero when within thresholds and non zero (1) when above thresholds
-#  uses ping, traceroute, and logger
+# This script was created to deal with ATT as a main connection, that uppon failure it responds to all dns request
+# with it's self. This renders any ping checks as always successful unless you disconnect the modem completely.
+#
 # by https://github.com/coreyfournier/router
 # inspired by https://github.com/popmonkey
 #
